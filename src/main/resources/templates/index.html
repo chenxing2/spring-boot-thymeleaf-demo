@@ -5,10 +5,15 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  
+  <link rel="stylesheet" th:href="@{//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css}" />
   <link rel="stylesheet" th:href="@{/css/index.css}" />
+  
+  <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <script th:src="@{//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+  
 </head>
 <body>
-  <span>hi</span>
+	<header th:replace="/common/top_header :: header"></header>
 </body>
 </html>
