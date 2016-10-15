@@ -11,9 +11,14 @@
   
   <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
   <script th:src="@{//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
-  
 </head>
 <body>
+	<!-- 通过 tag名称 引用 -->
 	<header th:replace="common/top_header :: header"></header>
+	
+	<div th:insert="common/footer :: copy">aaa</div>
+	
+	<!-- 通过 id 引用 -->
+	<div th:replace="~{common/footer :: #copy-section}"></div>
 </body>
 </html>
